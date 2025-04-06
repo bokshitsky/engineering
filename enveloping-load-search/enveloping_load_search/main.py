@@ -15,8 +15,8 @@ class Direction(Enum):
 
     def compare(self, v1: float, v2: float) -> bool:
         if self == Direction.POS:
-            return v2 >= v1
-        return v2 <= v1
+            return v2 > v1
+        return v2 < v1
 
 
 def is_more_critical(point1: list[float], point2: list[float], directions: Iterable[Direction]) -> bool:
