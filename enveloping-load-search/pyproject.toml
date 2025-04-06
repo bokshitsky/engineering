@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enveloping-load-search"
+version = "1.0.0"
+dependencies = [
+    "plotly[express]==6.0.1",
+    "pandas==2.2.3",
+    "dash==3.0.2",
+    "scipy==1.15.2"
+]
+
+[tool.ruff]
+line-length = 120
+target-version = 'py313'
